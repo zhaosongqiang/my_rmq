@@ -20,6 +20,7 @@ import ch.qos.logback.classic.LoggerContext;
 import ch.qos.logback.classic.joran.JoranConfigurator;
 import ch.qos.logback.core.joran.spi.JoranException;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -80,7 +81,8 @@ public class MQAdminStartup {
     protected static List<SubCommand> subCommandList = new ArrayList<SubCommand>();
 
     public static void main(String[] args) {
-        main0(args, null);
+    	System.setProperty("rocketmq.home.dir", "F:\\GitHub\\RocketMQ\\my_rmq\\distribution");
+    	main0(args, null);
     }
 
     public static void main0(String[] args, RPCHook rpcHook) {

@@ -41,6 +41,7 @@ import org.apache.rocketmq.store.config.MessageStoreConfig;
 import org.slf4j.LoggerFactory;
 
 import java.io.BufferedInputStream;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Properties;
@@ -55,7 +56,8 @@ public class BrokerStartup {
     public static InternalLogger log;
 
     public static void main(String[] args) {
-        start(createBrokerController(args));
+    	System.setProperty("rocketmq.home.dir", "F:\\GitHub\\RocketMQ\\my_rmq\\distribution");
+    	start(createBrokerController(args));
     }
 
     public static BrokerController start(BrokerController controller) {

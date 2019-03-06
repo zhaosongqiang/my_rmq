@@ -81,7 +81,7 @@ public class MQAdminStartup {
     protected static List<SubCommand> subCommandList = new ArrayList<SubCommand>();
 
     public static void main(String[] args) {
-    	System.setProperty("rocketmq.home.dir", "F:\\GitHub\\RocketMQ\\my_rmq\\distribution");
+    	System.setProperty("rocketmq.home.dir", "E:\\github\\RocketMQ\\rocketmq\\distribution");
     	main0(args, null);
     }
 

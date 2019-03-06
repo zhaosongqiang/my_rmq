@@ -49,7 +49,7 @@ public class NamesrvStartup {
     private static CommandLine commandLine = null;
 
     public static void main(String[] args) {
-        System.setProperty("rocketmq.home.dir", "F:\\GitHub\\RocketMQ\\my_rmq\\distribution");
+        System.setProperty("rocketmq.home.dir", "E:\\GitHub\\RocketMQ\\my_rmq\\distribution");
     	main0(args);
     }
 
